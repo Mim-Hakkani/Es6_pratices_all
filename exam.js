@@ -180,3 +180,44 @@ Forach:
 
 
 */
+
+/*
+৮. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো। 
+*/
+
+        // const phones = {
+        //     name:'Lava',
+        //     price:6200,
+        //     color: {
+        //         nice:'red',
+        //         awesome : 'silver',
+        //         beautiful:'white',
+        //         bad:'black'
+        //     }
+        // }
+
+        // const{name,price,color} =phones;
+        // console.log(name);
+
+        // const{bad} =phones.color
+        // console.log(bad);
+
+
+/*
+৯. [চ্যালেঞ্জিং] array এর destructuring করবে আর সেটা করার জন্য তুমি এরে এর থার্ড পজিশন এর উপাদান কে destructuring করে 'three' নামক একটা ভেরিয়েবল এ রাখবে। 
+*/
+
+    // const Bestfriends =['Shakil','Masum','Bayazed','Usaid'];
+    // const[first,second,third,fourth]=Bestfriends;
+    // console.log(fourth);
+
+/*
+১০. তিনটা প্যারামিটার ওয়ালা একটা ফাংশন লিখবে। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটার এর যোগ করে যোগফল রিটার্ন করবে। আর থার্ড প্যারামিটার এর একটা ডিফল্ট ভ্যালু থাকবে। সেটা হবে ৭। 
+*/
+        // const defaultParameter = (num,num2,num3=7) =>{
+        //     const add =num+num2+num3;
+        //     return add; 
+        // }
+        // const finalValue =  defaultParameter(4,6); //third parameter of default
+        // console.log(finalValue);
+
