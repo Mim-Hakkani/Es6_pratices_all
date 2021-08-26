@@ -226,22 +226,50 @@ Forach:
 ১১. একটা nested অবজেক্ট ডিক্লেয়ার করো (অর্থাৎ একটা অবজেক্ট এর প্রপার্টি এর মধ্যেও যে অবজেক্ট থাকতে পারে। আবার সেই অবজেক্ট এর প্রপার্টি এর মধ্যেও সে অবজেক্ট থাকতে পারে। সেই রকম একটা অবজেক্ট ডিক্লেয়ার করো। এবং যেকোন একটা প্রপার্টি এর মান একটা array হবে। জাস্ট এমন একটা অবজেক্ট )
 */
 
-  const phones = {
-            name:'Lava',
-            price:6200,
-            color: {
-                nice:'red',
-                awesome : 'silver',
-                beautiful:'white',
-                bad:{
-                    name1:'golam Hakkni mim',
-                    name2:'Golam kibria Jim',
-                    name3:'Golam Rabbani',
-                    name4:[4,6,7,8,9]
-                  }
-              }
-            }
+//   const phones = {
+//             name:'Lava',
+//             price:6200,
+//             color: {
+//                 nice:'red',
+//                 awesome : 'silver',
+//                 beautiful:'white',
+//                 bad:{
+//                     name1:'golam Hakkni mim',
+//                     name2:'Golam kibria Jim',
+//                     name3:'Golam Rabbani',
+//                     name4:[4,6,7,8,9]
+//                   }
+//               }
+//             }
 
-    const{name4} = phones.color.bad;
-    const[a,b,c,d,e]=name4
-    console.log(e);
+//     const{name4} = phones.color.bad;
+//     const[a,b,c,d,e]=name4
+//     console.log(e);
+
+/*
+ ১২. উপরের অবজেক্ট এ ডট এর আগে যে প্রশ্নবোধক চিহ্ন দিয়ে যে অপশনাল চেইনিং করা যায়। সেটা একটু প্রাকটিস করো। 
+ 
+ 1.its works when some value is not exits which i find to see
+ 2.then use optional chaning that no error is occure
+
+*/
+
+
+const phones = {
+    name:'Lava',
+    price:6200,
+    color: {
+        nice:'red',
+        awesome : 'silver',
+        beautiful:'white',
+        bad:{
+            name1:'golam Hakkni mim',
+            name2:'Golam kibria Jim',
+            name3:'Golam Rabbani',
+            name4:[4,6,7,8,9]
+          }
+      }
+    }
+
+const{good} =phones.color.bad;
+console.log(good);
